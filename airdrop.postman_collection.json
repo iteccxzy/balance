@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "0c86bac0-2046-4064-b57c-e6816865c212",
+		"name": "airdrop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "airdrop/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ticker",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://log-balance.herokuapp.com/api/airdrop/",
+					"protocol": "https",
+					"host": [
+						"log-balance",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"airdrop",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "burn/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ticker",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://log-balance.herokuapp.com/api/burn/",
+					"protocol": "https",
+					"host": [
+						"log-balance",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"burn",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "balance/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token c1b72cdfb7ffa6bbc638e89550b99cf6a7944609",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://log-balance.herokuapp.com/api/balance/1",
+					"protocol": "https",
+					"host": [
+						"log-balance",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"balance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "log/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://log-balance.herokuapp.com/api/log/1",
+					"protocol": "https",
+					"host": [
+						"log-balance",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"log",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peer/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emisor",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "receptor",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "ticker",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "saldo",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://log-balance.herokuapp.com/api/peer/",
+					"protocol": "https",
+					"host": [
+						"log-balance",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"peer",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
