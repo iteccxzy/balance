@@ -1,12 +1,6 @@
 # Challenge balance
 
 
-##  Admin 
-https://log-balance.herokuapp.com/admin/ 
-admin 
-pass: testing
-
-
 ##  Postman endopoints collection
 airdrop.postman_collection.json
 
